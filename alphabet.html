@@ -68,30 +68,31 @@
       </div>
 
       <div class="flex justify-between w-2/3">
-        <button class="btn rounded-full bg-purple-400 text-white px-5">
+        <button class="btn rounded-full bg-purple-700 text-white px-5">
           Life
           <img src="" alt="">
-          <span>1</span>
+          <span id="current-life">5</span>
         </button>
 
 
-        <button class="btn rounded-full bg-purple-400 text-white px-5">
+        <button class="btn rounded-full bg-purple-700 text-white px-5">
           Score
          <img src="" alt="">
-          <span>1</span>
+          <span id="current-score">0</span>
         </button>
       </div>
      </div>
     </section>
    
     <!-- Playground end-->
-    <section class="score flex justify-center items-center min-h-screen hidden">
+    <section id="score" class="flex justify-center items-center min-h-screen hidden">
        <div class="text-white text-center space-y-7 bg-[#FFFFFF33] p-5 rounded-lg">
+        <h3 class="text-3xl">Game Over !</h3>
          <h1 class=" text-8xl">
           <span class="font-extrabold">Score:</span>
-          <span>14</span>
+          <span id="final-score">14</span>
          </h1>
-         <button class="btn">Play Again</button>
+         <button onclick="play()" class="btn">Play Again</button>
          <p>Practice will make you Pro</p>
        </div>
     </section>
